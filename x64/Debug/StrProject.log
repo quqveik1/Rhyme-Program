@@ -1,0 +1,6 @@
+﻿  StrProject.cpp
+C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\Stuck.h(767,28): warning C4293: '<<': shift count negative or too big, undefined behavior
+C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\Stuck.h(771,28): warning C4293: '<<': shift count negative or too big, undefined behavior
+C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.cpp(202,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.cpp(156): warning C4715: 'strncmp_': not all control paths return a value
+  StrProject.vcxproj -> C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\x64\Debug\StrProject.exe

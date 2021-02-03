@@ -1,0 +1,2 @@
+C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\x64\Debug\StrProject.exe
+C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\x64\Debug\StrProject.pdb

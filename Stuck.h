@@ -39,7 +39,9 @@
 	if (!checkPtr ((const int *) adress))			             \
 	{													         \
 		printf (" (Invalid adress {%s} = %p)", #adress, adress); \
-	}													         \
+		abort ();	                                             \
+	}															 \
+	                                                             \
 }														   		 \
 															   
 #define safePrint(text, adress)								                               \

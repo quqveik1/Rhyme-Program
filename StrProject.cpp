@@ -2,18 +2,23 @@
 
 #include <stdio.h>
 #include "Q_Locale.h"
+#include <assert.h>
+#include "Stuck.h"
+//#include "TXLib.h"
 
 
 
 const int LineSize = 200;
-const int NLines = 1000;
+const int NLines = 4;
 
 
 char *readText (FILE *Onegin, char text[NLines][LineSize]);	 
 void printText (char text[NLines][LineSize]);
 void deleteEOL (char text [LineSize]);
 void sortStart (char text[NLines][LineSize]);
-void equating (char m1[], char m2[], const int Size);
+void strcpy_ (char m1[], char m2[], const int Size);
+int strncmp_ (char str1[], char str2[], size_t size);
+void swapStr (char str1[], char str2[], size_t size);
 
 int main()
 {
@@ -50,11 +55,19 @@ int main()
 
 	char text[NLines][LineSize] = {""};
 
+	
+
 	readText (Onegin, text);
+
+	//strncmp_ (text[0], text[2], -1);
 	printText (text);
 	printf ("\n");
-	char sortText [NLines][LineSize] = {};
+	//char sortText [NLines][LineSize] = {};
 	sortStart (text);
+	printf ("М: %d\n", 'М');
+	printf ("К: %d\n", 'К');
+	printf ("strncmp_: %d\n", strncmp_ (text[0], text[1], LineSize));
+	//swapStr (text[0], text[1], LineSize);
 	printText (text);
 
 	
@@ -89,28 +102,74 @@ void printText (char text[NLines][LineSize])
 void sortStart (char text[NLines][LineSize])
 {
 	//equating (sortText[0], text[0], NLines);
-	for (int j = 0; j < NLines; j ++)
+	for (int j = 0; j < NLines - 1; j ++)
 	{
-		for (int i = 0; i < NLines - 1 ; i++)
+		for (int i = 0; i < NLines - j - 1 ; i++)
 		{
-			for (int n = 0; n < LineSize; n++)
+			if (strncmp_ (text[i + 1], text[i], LineSize) < 0)
 			{
-				if (text[i + 1][n] > text[i][n])
-				{
-					char copy[LineSize] = "";
-					//copy = sortText[i]; 
-					equating (copy, text[i], LineSize);
-					equating (text[i], text[i + 1], LineSize);
-					equating (text[i], copy, LineSize);
-					//sortText [i] = sortText[i + 1];
-					//sortText [i] = copy;
-				}
+				swapStr (text[i], text[i+1], LineSize);
+				break;
 			}
+			//sortText [i] = sortText[i + 1];
+			//sortText [i] = copy;
+
+			//printText (text);
+			//printf ("\n");
 		}
 	}
 }
 
-void equating (char m1[], char m2[], const int Size)
+int strncmp_ (char str1[], char str2[], size_t size)
+{
+	VerifyPtr (str1);
+	VerifyPtr (str2);
+
+	for (int n = 0; n < size; n++)
+	{
+		if (str1[n] != '\0')
+		{
+			if (str1[n] != str2[n])
+			{
+				return str1[n] - str2[n];
+			}
+		}
+		/*
+		if (str1[n] == str2[n])
+		{
+			return 0;
+		}
+		if (str1[n] > str2[n])
+		{
+			return 1;
+		}
+		if (str1[n] < str2[n])
+		{
+			return -1;
+		}
+		abcd\0 yrtfg
+		abcd\0 fghfghf
+		*/
+	}
+
+
+}
+
+void swapStr (char str1[], char str2[], size_t size)
+{
+	VerifyPtr (str1);
+	VerifyPtr (str2);
+
+	for (int n = 0; n < size; n++)
+	{
+		char copy = str1[n];
+		str1[n] = str2[n];
+		str2[n] = copy;
+	}
+
+}
+
+void strcpy_ (char m1[], char m2[], const int Size)
 {
 	//m1 = m2;
 	
@@ -145,7 +204,10 @@ void deleteEOL (char text [LineSize])
 	{
 
 		//const char *nul = "\0";
-		text[len - 1] = '\0';
+		if (text[len-1] == '\n')
+		{
+			text[len - 1] = '\0';
+		}
 	}
 }
 
