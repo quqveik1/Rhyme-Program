@@ -9,14 +9,15 @@
 
 
 
+
 const int LineSize = 200;
-const int NLines = 5;
+const int NLines = 10;
 
 
-char *readText (FILE *Onegin, char text[NLines][LineSize]);	 
-void printText (char text[NLines][LineSize]);
+char *readText (FILE *Onegin, char text[NLines][LineSize], char *ptext[NLines]);	 
+void printText (char *ptext[NLines]);
 void deleteEOL (char text [LineSize]);
-void sortStart (char text[NLines][LineSize]);
+void sortStart (char *ptext[NLines]);
 void strcpy_ (char m1[], char m2[], const int Size);
 int strncmp_ (const char str1[], const char str2[], const size_t size);
 void swapStr (char str1[], char str2[]);
@@ -58,22 +59,25 @@ int main()
 	FILE *Onegin = fopen ("onegin.txt", "r");
 
 	char text[NLines][LineSize] = {""};
+	char *ptext[NLines];
 
 	
 	
-	readText (Onegin, text);
+	readText (Onegin, text, ptext);
+
+	
 
 	//strncmp_ (text[0], text[2], -1);
-	printText (text);
-	printf ("\n");
+	printText (ptext);
+	printf ("%d||isPunct: %d; isalpha: %d\n", unsigned char ('«'), ispunct ('«'), isalpha ('«'));
 
 	char t1[] = "когда не в шутку занемог,";
 	char t2[] = "он уважать себя заставил";
 
-	printf ("strncmp_: %d\n", strncmp_ (t1, t2, LineSize));
+	//printf ("strncmp_: %d\n", strncmp_ (t1, t2, LineSize));
 	
-	sortStart (text);
-	printText (text);
+	sortStart (ptext);
+	printText (ptext);
 	
 	
    //bubleUnittest ();
@@ -82,12 +86,16 @@ int main()
 }
 
 
-char *readText (FILE *Onegin, char text[NLines][LineSize])
+char *readText (FILE *Onegin, char text[NLines][LineSize], char *ptext[NLines])
 {
 	for (int i = 0; i < NLines; i++)
 	{
 		if (!fgets (text[i], LineSize, Onegin)) break;
 		deleteEOL (text[i]);
+	}
+	for (int i = 0; i < NLines; i++)
+	{
+		ptext[i] = text[i];	
 	}
 
 	return (char *) text;
@@ -97,32 +105,34 @@ void bubleUnittest ()
 {
 	char arr[][LineSize] = {"4", "3", "5", "1", "2"};
 	bubleCheck (arr, 5);
-	printText (arr);
+	//printText (arr);
 }
 
-void printText (char text[NLines][LineSize])
+void printText (char *ptext[NLines])
 {
 	for (int i = 0; i < NLines; i++)
 	{
-		if (text[i][0] != 0)
+		if (ptext[i][0] != 0)
 		{
-			printf ("%d: ||%s||\n", i, text[i]);
+			printf ("%d: ||%s||\n", i, ptext[i]);
 		}
 	}
 }
 
-void sortStart (char text[NLines][LineSize])
+void sortStart (char *ptext[NLines])
 {
 	//equating (sortText[0], text[0], NLines);
 	for (int j = 0; j < NLines; j ++)
 	{
 		for (int i = 0; i < NLines - j - 1; i++)
 		{
-			int delta = strncmp_ (text[i + 1], text[i], LineSize);
+			int delta = strncmp_ (ptext[i + 1], ptext[i], LineSize);
 
 			if (delta < 0)
 			{
-				swapStr (text[i], text[i+1]);
+				char *temp = ptext[i];
+				ptext[i] = ptext[i + 1];
+				ptext[i + 1] = temp;
 			}
 			//sortText [i] = sortText[i + 1];
 			//sortText [i] = copy;
@@ -167,6 +177,7 @@ int strncmp_ (const char str1[], const char str2[], const size_t size)
 		{
 			n2++;
 		}
+
 
 
 		if (str1[n1] == '\0' && str2[n2] == '\0')
