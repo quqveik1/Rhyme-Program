@@ -3,3 +3,12 @@ x64/Debug/StrProject.ilk
 x64/Debug/StrProject.log
 x64/Debug/StrProject.pdb
 x64/Debug/vc142.idb
+*.ipch
+*.ipch
+*.ipch
+*.opendb
+*.db-wal
+*.db
+*.db
+*.db-shm
+*.ilk

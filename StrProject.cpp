@@ -9,18 +9,28 @@
 
 
 
+struct gnirts
+{
+	const char *str;
+	int l;
+};
+
 
 const int LineSize = 200;
-const int NLines = 10;
+const int NLines = 12;
 
 
 char *readText (FILE *Onegin, char text[NLines][LineSize], char *ptext[NLines]);	 
 void printText (char *ptext[NLines]);
 void deleteEOL (char text [LineSize]);
-void sortStart (char *ptext[NLines]);
+void sortStart (const char *ptext[NLines]);
 void strcpy_ (char m1[], char m2[], const int Size);
-int strncmp_ (const char str1[], const char str2[], const size_t size);
+int strncmp_ (const char str1[], const char str2[]);
 void swapStr (char str1[], char str2[]);
+
+int strcmpBack (const char str1[], const char str2[]);
+void rhymeSort (char *ptext[NLines]);
+void textSort (char *ptext[NLines], int (*cmp)(const char str1[], const char str2[]));
 
 void bubleCheck (char arr[][LineSize], size_t size);
 void bubleUnittest ();
@@ -59,25 +69,28 @@ int main()
 	FILE *Onegin = fopen ("onegin.txt", "r");
 
 	char text[NLines][LineSize] = {""};
-	char *ptext[NLines];
+	gnirts ptext[NLines] = {};
 
 	
 	
 	readText (Onegin, text, ptext);
+	fclose (Onegin);
+
+	
 
 	
 
 	//strncmp_ (text[0], text[2], -1);
-	printText (ptext);
-	printf ("%d||isPunct: %d; isalpha: %d\n", unsigned char ('«'), ispunct ('«'), isalpha ('«'));
+	printText ((char **)ptext);
+	printf ("%d||isPunct: %d; isalpha: %d isnum^ %d\n", unsigned char ('«'), ispunct (unsigned char ('М')) || !isalnum(unsigned char ('М')), isalpha ('Ь'), !isalnum(unsigned char ('«')));
 
 	char t1[] = "когда не в шутку занемог,";
 	char t2[] = "он уважать себя заставил";
 
 	//printf ("strncmp_: %d\n", strncmp_ (t1, t2, LineSize));
 	
-	sortStart (ptext);
-	printText (ptext);
+	textSort (ptext, &strcmpBack);
+	printText ((char **)ptext);
 	
 	
    //bubleUnittest ();
@@ -119,20 +132,23 @@ void printText (char *ptext[NLines])
 	}
 }
 
-void sortStart (char *ptext[NLines])
+void sortStart (const char *ptext[NLines])
 {
 	//equating (sortText[0], text[0], NLines);
 	for (int j = 0; j < NLines; j ++)
 	{
 		for (int i = 0; i < NLines - j - 1; i++)
 		{
-			int delta = strncmp_ (ptext[i + 1], ptext[i], LineSize);
+			int delta = strncmp_ (ptext[i + 1], ptext[i]);
 
 			if (delta < 0)
 			{
-				char *temp = ptext[i];
+				
+				const char *temp = ptext[i];
 				ptext[i] = ptext[i + 1];
 				ptext[i + 1] = temp;
+				
+				//swapStr ((char *)ptext[i], (char *)ptext[i + 1]);
 			}
 			//sortText [i] = sortText[i + 1];
 			//sortText [i] = copy;
@@ -143,6 +159,117 @@ void sortStart (char *ptext[NLines])
 	}
 }
 
+void textSort (char *ptext[NLines], int (*cmp)(const char str1[], const char str2[]))
+{
+	for (int j = 0; j < NLines; j ++)
+	{
+		for (int i = 0; i < NLines - j - 1; i++)
+		{
+			int delta = (*cmp) (ptext[i + 1], ptext[i]);
+
+			if (delta < 0)
+			{
+				
+				char *temp = ptext[i];
+				ptext[i] = ptext[i + 1];
+				ptext[i + 1] = temp;
+				
+				//swapStr ((char *)ptext[i], (char *)ptext[i + 1]);
+			}
+			//sortText [i] = sortText[i + 1];
+			//sortText [i] = copy;
+
+			//printText (text);
+			//printf ("\n");
+		}
+	}
+}
+
+
+void rhymeSort (char *ptext[NLines])
+{
+	int l1 = 0;
+	int l2 = 0;
+
+	for (int j = 0; j < NLines - 1; j ++)
+	{
+		for (int i = 0; i < NLines - j - 1; i++)
+		{
+			l1 = strlen (ptext[i]);	
+			l2 = strlen (ptext[i + 1]);
+			int delta = strcmpBack (ptext[i], ptext[i + 1]);
+
+			if (delta < 0)
+			{
+				
+				char *temp = ptext[i];
+				ptext[i] = ptext[i + 1];
+				ptext[i + 1] = temp;
+				
+				//swapStr ((char *)ptext[i], (char *)ptext[i + 1]);
+			}
+		}
+	}
+
+}
+
+
+
+int strcmpBack (const char str1[], const char str2[])
+{
+	VerifyPtr (str1);
+	VerifyPtr (str2);
+
+	int l1 = strlen (str1);	
+	int l2 = strlen (str2);
+
+	int n1 = 0;
+	int n2 = 0;
+
+	for (int i = 0; i < NLines; i++)
+	{
+
+		while (!isalnum (unsigned char (str1[l1 - n1])) && n1 < l1)
+		{	 
+			n1++;
+
+		}
+		while (!isalnum (unsigned char (str2[l2 - n2])) && n2 < l2)
+		{
+			n2++;
+		}
+
+		/*
+		if (str1[l1 - n1] == '\0' && str2[l2 - n2] == '\0')
+		{
+			return 0;	
+		}
+		if (str1[n1] == '\0')
+		{
+			return -1;	
+		}
+		if (str2[n2] == '\0')
+		{
+			return 1;	
+		}
+		*/
+		//if (n1 > l1)   return -1;
+		//if (n2 > l2)   return 1;
+
+		if (str1[l1 - n1] != str2[l2 - n2])
+		{
+			//printf ("str1[%d]: , str2[%d]: ", n1, n2);
+			//printf ("%d", l1 - i);
+			return str1[l1 - n1] - str2[l2 - n2];
+		}
+		n1++;
+
+		n2++;
+
+	}
+
+}
+
 void bubleCheck (char arr[][LineSize], size_t size)
 {
 	for (int j = 0; j < NLines - 1; j ++)
@@ -150,7 +277,7 @@ void bubleCheck (char arr[][LineSize], size_t size)
 		bool sorted = true;
 		for (int i = 0; i < NLines - j - 1; i++)
 		{
-			if (strncmp_ (arr[i], arr[i + 1], 5))
+			if (strncmp_ (arr[i], arr[i + 1]))
 			{
 				swapStr (arr[i], arr[i+1]);
 			}			
@@ -159,23 +286,31 @@ void bubleCheck (char arr[][LineSize], size_t size)
 	}
 }
 
-int strncmp_ (const char str1[], const char str2[], const size_t size)
+int strncmp_ (const char str1[], const char str2[])
 {
 	VerifyPtr (str1);
 	VerifyPtr (str2);
 
+	int l1 = strlen (str1);	
+	int l2 = strlen (str2);
+
 	int n1 = 0;
 	int n2 = 0;
 
-	for (int n = 0; n < size; n++)
+	for (int n = 0; n < NLines; n++)
 	{
-		while (ispunct (str1[n1]))
-		{
-			n1++;
+		while (!isalnum (unsigned char (str1[n1])) && str1[n1] != '\0')
+		{	 
+			if (n1 < l1)
+			{
+				n1++;
+			}
+
 		}
-		while (ispunct (str2[n2]))
+		while (!isalnum (unsigned char (str2[n2])) && str2[n2] != '\0')
 		{
-			n2++;
+			if (n2 < l2)
+				n2++;
 		}
 
 
