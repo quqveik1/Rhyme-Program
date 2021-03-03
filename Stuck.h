@@ -21,7 +21,7 @@
 }										  \
 
 
-#define POSINFO {__FILE__, __LINE__, __FUNCSIG__}
+#define POSINFO {__FILE__, __LINE__, __PRETTY_FUNCTION__}
 #define VAR(type, name, ...)  type name (POSINFO, #name, ##__VA_ARGS__)
 
 
@@ -33,7 +33,7 @@
 		assert (_OK_);							     \
 	}											     \
 }													 \
-														   
+
 #define VerifyPtr(adress)								         \
 {														         \
 	if (!checkPtr ((const int *) adress))			             \
@@ -43,7 +43,7 @@
 	}															 \
 	                                                             \
 }														   		 \
-															   
+
 #define safePrint(text, adress)								                               \
 {															                               \
 	if (!checkPtr (adress))							                                       \
@@ -89,7 +89,7 @@ struct Stack
 	//!
 	//!
 	//! @note Если у вас вылезла ошибка гляньте сюда и поймите где вы накосячили
-	//! 
+	//!
 	//! @usage @code dump (_OVERFLOW_);
 	//!
 	//!@endcode
@@ -98,10 +98,10 @@ struct Stack
 	{
 		_OK_ = 0,
 		_OVERFLOW_ = 1,
-		_MINUSARRELEMENT_ = 2, 
-		_CANARYERROR_ = 3, 
+		_MINUSARRELEMENT_ = 2,
+		_CANARYERROR_ = 3,
 		_NULLPTR_ = 4,
-		_HASHERROR_ = 5, 
+		_HASHERROR_ = 5,
 		_INVALIDPTR_ = 6
 	};
 
@@ -109,18 +109,18 @@ struct Stack
 	//!
 	//!
 	//! @note Подобранные цвета
-	//! 
+	//!
 	//!
 	//!@endcode
 
 	enum Colors
 	{
 		_BLUE_ = 0x1,
-		_RED_  = 0xc, 
+		_RED_  = 0xc,
 		_CYAN_ = 0b00000011,
 		_LIGHTCYAN_ = 0b00001011,
-		_GRAY_ = 0b00001000, 
-		_GREEN_ = 0xa, 
+		_GRAY_ = 0b00001000,
+		_GREEN_ = 0xa,
 		_ERROR_ = 0x3
 	};
 
@@ -174,14 +174,14 @@ struct Stack
 
 	//! @brief Информация о позиции и названии Стека для аварийной отладочной распечтки dump (); [11 - 13]
 	PositionInfo structPos = {};
-	
+
 	//! @brief Задняя канарейка [14]
-	const int lastCanary =  0x12345E84;	 
+	const int lastCanary =  0x12345E84;
 };
 
 void Stack::add ()
 {
-	if (lastPos < 2) 
+	if (lastPos < 2)
 	{
 		printf ("add () не вохможен из-за недостатка кол-ва элементов\n");
 		return;
@@ -198,7 +198,7 @@ void Stack::add ()
 
 void Stack::mul ()
 {
-	if (lastPos < 2) 
+	if (lastPos < 2)
 	{
 		printf ("add () не вохможен из-за недостатка кол-ва элементов\n");
 		return;
@@ -215,7 +215,7 @@ void Stack::mul ()
 
 void Stack::sub ()
 {
-	if (lastPos < 2) 
+	if (lastPos < 2)
 	{
 		printf ("add () не вохможен из-за недостатка кол-ва элементов\n");
 		return;
@@ -232,7 +232,7 @@ void Stack::sub ()
 
 void Stack::div ()
 {
-	if (lastPos < 2) 
+	if (lastPos < 2)
 	{
 		printf ("add () не вохможен из-за недостатка кол-ва элементов\n");
 		return;
@@ -252,14 +252,14 @@ void Stack::div ()
 //!	@brief Структура для теста канареек
 //!
 //!
-//! 
+//!
 //! @code StackTest st1 {{}, {POSINFO(st1)}, {}};
 //!
 //!@endcode
 
 struct StackTest
 {
-	int mLeft[1] = {};	
+	int mLeft[1] = {};
 	Stack data;
 	int mRight[1] = {};
 
@@ -269,8 +269,8 @@ struct StackTest
 //!	@brief Функция которыя тестирует Хэшфункции
 //!
 //!
-//! 
-//! 
+//!
+//!
 //! @code VAR (Stack, S1);
 //!		  S1.unittestHash ()
 //!
@@ -280,7 +280,7 @@ void Stack::unittestHash ()
 {
 	/*
 	StackTest testData {{}, {POSINFO, "testData.data"}, {}};
-	
+
 	testData.data.push (1);
 	//testData.data.pop ();
 	testData.data.push (10);
@@ -292,14 +292,14 @@ void Stack::unittestHash ()
 	//testData.data.push (12);
 	*/
 
-	
+
 
 }
 
 //!	@brief Функция для теста канареек
 //!
 //! @param kOfPush Кол-во раз, которое нужно подождать перед запретной операцией
-//! 
+//!
 //! @code s1.unittestCanary
 //!
 //!@endcode
@@ -308,10 +308,10 @@ void Stack::unittestCanary (int kOfPush)
 
 	StackTest testData {{}, {POSINFO, "testData.data"}, {}};
 	//st1.m1[0] = 2;
-	testData.mRight[1] = 1000;
+	//testData.mRight[1] = 1000;
 	testData.data.push (3);
 	kOfPush = 0;
-	
+
 
 	//st1.m2[-1] = 4;
 
@@ -329,11 +329,11 @@ StackTest::StackTest (PositionInfo _structPos) :
 
 //!	@brief Конструктор класса
 //!
-//!	@param _structPos Это объект PositionInfo  
+//!	@param _structPos Это объект PositionInfo
 //! @param _name Это название структуры
 //!
 //! @return НИЧЕГО и не надо:)
-//! 
+//!
 //! @code VAR (Stack, S1);
 //!				S1.unittestHash ()
 //!@endcode
@@ -341,14 +341,14 @@ StackTest::StackTest (PositionInfo _structPos) :
 Stack::Stack (PositionInfo _structPos, const char *_name) :
 	 structPos (_structPos),
 	 name	   (_name)
-{ 
-	reHash ();	
+{
+	reHash ();
 
 }
 
 //!	@brief Функция для правильного подсчета и изменения хеша для класса
 //!
-//! 
+//!
 //! @code s1.reHash ();
 //!
 //!@endcode
@@ -364,7 +364,7 @@ uint64_t Stack::reHash ()
 
 //!	@brief Функция для правильного подсчета, но не его изменения хеша для класса
 //!
-//! 
+//!
 //! @code s1.checkHash ();
 //!
 //!@endcode
@@ -383,17 +383,17 @@ uint64_t Stack::checkHash ()
 //!
 //! @return _OK_ Если все хорошо, вызывает ассерт если кто-то накосячил:(
 //! @warning Эта защита защищает только от самых бональных ошибок, полностью надеятся на ее не нужно
-//! 
+//!
 //! @usage @code checkup()
 //!
 //!@endcode
- 
+
 
 int Stack::checkup ()
 {
 	if (this == nullptr)
 	{
-		return _NULLPTR_; 	
+		return _NULLPTR_;
 	}
 
 	if (!checkPtr (this))
@@ -411,13 +411,13 @@ int Stack::checkup ()
 	{
 		return _MINUSARRELEMENT_;
 		//assert (0 == 1);
-		
+
 	}
 
 	if (firstCanary != 0x7EF79D07)
 	{
 		return _CANARYERROR_;
-		//assert (0 == 1);	
+		//assert (0 == 1);
 	}
 	if (lastCanary != 0x12345E84)
 	{
@@ -441,7 +441,7 @@ int Stack::checkup ()
 //!
 //! @return НИЧЕГО
 //! @warning При удалении элементов из пустого массива вызывается assert
-//! 
+//!
 //! @usage @code s1.pop ();
 //!
 //!@endcode
@@ -469,7 +469,7 @@ void Stack::pop ()
 //!
 //! @return НИЧЕГО
 //! @warning При добавлении элементов в полный массив вызывается assert
-//! 
+//!
 //! @usage @code s1.push (2);
 //!
 //!@endcode
@@ -514,7 +514,7 @@ hlt
 //!
 //! @return НИЧЕГО
 //! @note Для отладки лучше использовать dump ();
-//! 
+//!
 //! @usage @code s1.print ();
 //!
 //!@endcode
@@ -563,7 +563,7 @@ Stack [0x004C80] (_LASTPOSNEGATIVE_) "s" "main.cpp (20)"
 //!	@param posinfo где вызвался dump
 //! @param cause причина вызова
 //!
-//! 
+//!
 //! @code s1.dump (POSINFO, "Canary");
 //!
 //!@endcode
@@ -592,7 +592,7 @@ void Stack::dump (PositionInfo posinfo, const char *cause)
 		printf ("(_OK_) ");
 		break;
 	case _OVERFLOW_:
-		setConsoleColor (_ERROR_);	
+		setConsoleColor (_ERROR_);
 		printf ("(_OVERFLOW_) ");
 		break;
 	case _MINUSARRELEMENT_:
@@ -632,7 +632,7 @@ void Stack::dump (PositionInfo posinfo, const char *cause)
 			"	lastPos = %d\n"
 			"	stack [0x%p]\n"
 			"	{\n",
-		    firstCanary, (firstCanary == 0x7EF79D07)? "ok" : "ERROR", 
+		    firstCanary, (firstCanary == 0x7EF79D07)? "ok" : "ERROR",
 			MaxSize,
 			lastPos,
 			stack
@@ -649,7 +649,7 @@ void Stack::dump (PositionInfo posinfo, const char *cause)
 			{
 				printf ("		*[%d] = %d\n", i, stack[i]);
 			}
-			else 
+			else
 			{
 				printf ("		 [%d] = %d\n", i, stack[i]);
 			}
@@ -689,7 +689,7 @@ void Stack::dump (PositionInfo posinfo, const char *cause)
 //!	@param adress адресс первого элемента стуктуры
 //! @param size размер этого объекта
 //!
-//! 
+//!
 //! @code s1.hashCalc (&s1, sizeof (*this));
 //!
 //!@endcode
@@ -711,7 +711,7 @@ uint64_t hashCalc (const void *address, const size_t size)
 	uint64_t HASH = 0;
 
 	const unsigned char *addr = (const unsigned char*)(address);
-	
+
 	for (size_t i = 0; i < size; i++)
 	{
 		assert (i < size && 0 <= i);
@@ -723,8 +723,8 @@ uint64_t hashCalc (const void *address, const size_t size)
 
 
 		HASH >>= 1;
-		
-		HASH |= lastBit << 63;		
+
+		HASH |= lastBit << 63;
 	}
 
 	return HASH;
@@ -735,8 +735,8 @@ uint64_t hashCalc (const void *address, const size_t size)
 		if (changes == false)
 		{
 			return false;
-		} 
-		else 
+		}
+		else
 		{
 			changes = false;
 			return true;
@@ -748,8 +748,8 @@ uint64_t hashCalc (const void *address, const size_t size)
 		if (changes == false)
 		{
 			return true;
-		} 
-		else 
+		}
+		else
 		{
 			changes = false;
 			return false;
@@ -799,7 +799,7 @@ void Stack::dumpNew (const int cause)
 		break;
 
 	}
-	
+
 
 	printf ("{%s} {%s (%d)} \n", structPos.name, structPos.function, structPos.line);
 	printf ("{\n"
@@ -821,7 +821,7 @@ void Stack::dumpNew (const int cause)
 			{
 				printf ("		*[%d] = %d\n", i, stack[i]);
 			}
-			else 
+			else
 			{
 				printf ("		 [%d] = %d\n", i, stack[i]);
 			}
@@ -860,7 +860,7 @@ Stack [0x004C80] (_LASTPOSNEGATIVE_) "s" "main.cpp (20)"
 //!
 //!	@param color это цвет его можно передавать например ввиде пространств имен Colors, которые я объвлял на верху
 //!
-//! 
+//!
 //! @code setConsoleColor (_RED_);
 //!
 //!@endcode
@@ -872,7 +872,7 @@ void setConsoleColor (unsigned color)
 //!	@brief Функция для сброса цвета консоли к начальному черному
 //!
 //!
-//! 
+//!
 //! @code setConsoleColor ();
 //!
 //!@endcode
@@ -885,7 +885,7 @@ void clearConsoleColor ()
 //!	@brief Функция для простого вывода для новичков
 //!
 //!
-//! 
+//!
 //! @code print ();
 //!
 //!@endcode
@@ -893,10 +893,10 @@ void clearConsoleColor ()
 void Stack::print ()
 {
 	//scheckup ();
-	setConsoleColor (_CYAN_);	
+	setConsoleColor (_CYAN_);
 	assert (stack);
 	assert (this);
-	
+
 	//printf ("\n%s = [ ", structPos);
 	structPos.dump ();
 	for (int i = 0; i <= lastPos; i++)
@@ -916,7 +916,7 @@ void Stack::print ()
 
 	//lastPos++;
 
-} 
+}
 
 //!	@brief Меняет два элемента массива между собой
 //!
@@ -925,7 +925,7 @@ void Stack::print ()
 //!
 //! @return НИЧЕГО
 //! @warning При замене несуществующих элементов вызывается assert
-//! 
+//!
 //! @usage @code s1.change (2, 3);
 //!
 //!@endcode
@@ -958,7 +958,7 @@ void Stack::dumpOld (/*const char *name*/)
 	structPos.dump ();
 	checkup ();
 
-	
+
 
 }
 
@@ -968,7 +968,7 @@ void Stack::dumpOld (/*const char *name*/)
 //!
 //! @return НИЧЕГО
 //! @note Он может вам много что рассказать
-//! 
+//!
 //! @usage @code s1.dump ();
 //!				 s1.dump (_OverFlow_);
 //!
@@ -987,17 +987,17 @@ void Stack::dumpOld (const int cause)
 	structPos.dump ();
 
 
-	
+
 
 }
 
 //!	@brief Сначало заполняет Стек kOfPush кол-вом элементами
 //!
-//!	@param kOfPush кол-во элементов, которое будет передано в стек 
+//!	@param kOfPush кол-во элементов, которое будет передано в стек
 //!
 //! @return НИЧЕГО
 //! @note Он может проверить на наличе ошибок в стеке
-//! 
+//!
 //! @usage @code s1.unittest
 //!
 //!@endcode
@@ -1033,7 +1033,7 @@ void Stack::unittest (int kOfPush)
 //!	@param text это текст в котором нужно посчитать статистику
 //! @param stat Это масив размером 256 который содержит статистику каждой буквы
 //!
-//! 
+//!
 //! @code statText ("abbc", stat);
 //!
 //!@endcode
@@ -1042,10 +1042,10 @@ void statText (char *text, int stat[256])
 {
 	for (int i = 32; i < 256; i++)
 	{
-		//printf ("[%c] == %d\n", i, i);	
+		//printf ("[%c] == %d\n", i, i);
 	}
 
-	
+
 	for (int i = 0; text[i] != 0; i++)
 	{
 		//printf ("[%c] == %d\n", text[i], (unsigned char) text[i]);
@@ -1067,7 +1067,7 @@ void statText (char *text, int stat[256])
 	192	  96  48  24   12	6 3	1 0
 	  0	   0   0   0	0	0 1	1
 		   11000000
-	
+
   */
 }
 
@@ -1075,7 +1075,7 @@ void statText (char *text, int stat[256])
 //!
 //! @param n данное число для перевода
 //!
-//! 
+//!
 //! @code tenTo2 ();
 //!
 //!@endcode
@@ -1083,9 +1083,9 @@ void statText (char *text, int stat[256])
 void tenTo2 (unsigned int n)
 {
 	for (int i = 7; i >= 0; i--)
-	{	
+	{
 		//printf ("%d ", 1 << i);
-				    
+
 		printf ("%d", (n & (1 << i)) >> i);
 		//printf ("\n");
 	}
@@ -1102,7 +1102,7 @@ void charToAscii (char c)
 //!	@brief Функция для вывода информации о позиции об объекте
 //!
 //!
-//! 
+//!
 //! @code s1.structPos.dump ();
 //!
 //!@endcode
@@ -1115,7 +1115,7 @@ void PositionInfo::dump ()
 	//printf     ("{File: [%p], Func: [%p], Line: [%d]}", file, function, line);
 	VerifyPtr (file);
 	VerifyPtr (function);
-	
+
 	printf     ("{File: [%s], Func: [%s], Line: [%d]}", file, function, line);
 }
 

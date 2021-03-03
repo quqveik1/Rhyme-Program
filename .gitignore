@@ -12,3 +12,7 @@ x64/Debug/vc142.idb
 *.db
 *.db-shm
 *.ilk
+*.ipch
+.vs/StrProject/v16/.suo
+.vs/StrProject/v16/Browse.VC.db
+x64/Debug/StrProject.exe

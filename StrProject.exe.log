@@ -1,0 +1,2328 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041ED61 в функции findnEOLs(). Попытка прочесть данные по адресу 0x0000000006869000. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000064C38E0 (64-bit), Flags: Cmdre0, Thread: 0x47AC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041ED61 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: findnEOLs()
+# 1 0x000000000041E0F4 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:31:55, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:32:04
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041ED61 в функции findnEOLs(). Попытка прочесть данные по адресу 0x0000000006869000. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000064C38E0 (64-bit), Flags: Cmdre0, Thread: 0x47AC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041ED61 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: findnEOLs()
+# 1 0x000000000041E0F4 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:31:55, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:32:04
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041EDC9 в функции findEOLs(). Попытка прочесть данные по адресу 0x00000000001BF000. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000064C38E0 (64-bit), Flags: Cmdre0, Thread: 0x3E9C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041EDC9 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: findEOLs()
+# 1 0x000000000041E336 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: readText()
+# 2 0x000000000041E16B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:35:57, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:36:06
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041EDC9 в функции findEOLs(). Попытка прочесть данные по адресу 0x00000000001BF000. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000064C38E0 (64-bit), Flags: Cmdre0, Thread: 0x3E9C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041EDC9 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: findEOLs()
+# 1 0x000000000041E336 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: readText()
+# 2 0x000000000041E16B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:35:57, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:36:06
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E83D в функции strcmpBack(). Попытка прочесть данные по адресу 0x000000001CA8396E. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000064C38E0 (64-bit), Flags: Cmdre0, Thread: 0x26D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E83D in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E5E6 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E242 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:40:01, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:40:09
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E83D в функции strcmpBack(). Попытка прочесть данные по адресу 0x000000001CA8396E. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000064C38E0 (64-bit), Flags: Cmdre0, Thread: 0x26D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E83D in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E5E6 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E242 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:40:01, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:40:09
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E88A в функции strcmpBack(). Попытка прочесть данные по адресу 0xFFFFFFFF9EE0F615. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x56E8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E88A in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E633 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E242 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:43:26, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:43:29
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E88A в функции strcmpBack(). Попытка прочесть данные по адресу 0xFFFFFFFF9EE0F615. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x56E8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E88A in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E633 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E242 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:43:26, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:43:29
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E89B в функции strcmpBack(). Попытка прочесть данные по адресу 0x0000000029D2196D. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x57D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E89B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E633 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E242 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:44:27, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:44:30
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E89B в функции strcmpBack(). Попытка прочесть данные по адресу 0x0000000029D2196D. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x57D4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E89B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E633 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E242 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Feb 28 2021 22:44:27, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Feb 28 2021 22:44:30
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E89B в функции strcmpBack(). Попытка прочесть данные по адресу 0xFFFFFFFFBF60B28C. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x2C98 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E89B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E633 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E242 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:42:03, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:42:06
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E89B в функции strcmpBack(). Попытка прочесть данные по адресу 0xFFFFFFFFBF60B28C. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x2C98 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E89B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E633 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E242 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:42:03, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:42:06
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4CB в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x7008 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4CB in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:47:35, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:47:37
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4CB в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x7008 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4CB in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:47:35, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:47:38
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4D1 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x5CAC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4D1 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:51:05, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:51:08
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4D1 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x5CAC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4D1 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:51:05, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:51:08
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4D1 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x848C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4D1 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:54:00, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:54:03
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4D1 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x848C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4D1 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:54:00, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:54:03
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4E4 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x68AC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4E4 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E196 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:56:09, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:56:12
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4E4 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x68AC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4E4 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E196 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:56:09, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:56:12
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x4F80 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:56:48, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:56:51
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x4F80 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 18:56:48, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 18:56:51
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x7B60 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 19:03:57, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 19:04:00
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x7B60 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 19:03:57, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 19:04:00
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу 0x00000435044C043D. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x52C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 19:07:50, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 19:07:53
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу 0x00000435044C043D. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x52C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 19:07:50, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 19:07:53
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x2FC0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 19:08:18, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 19:08:21
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x2FC0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 19:08:18, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 19:08:21
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0xFFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 19:09:45, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 19:09:47
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0xFFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 19:09:45, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 19:09:47
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x42DC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:05:25, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:05:27
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x42DC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:05:25, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:05:28
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x63FC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:07:23, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:07:25
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E4F3 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x63FC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E4F3 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:07:23, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:07:26
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E452 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x8024 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E452 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:11:48, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:11:50
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E452 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x8024 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E452 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:11:48, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:11:50
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E452 в функции printText(). Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x7F48 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E452 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:12:04, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:12:07
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E452 в функции printText(). Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x7F48 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E452 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E1A5 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:12:04, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:12:07
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E808 в функции strcmpBack(). Попытка прочесть данные по адресу 0x00000000637867D2. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x1C10 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E808 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E59D in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E216 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:13:06, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:13:10
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E808 в функции strcmpBack(). Попытка прочесть данные по адресу 0x00000000637867D2. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x1C10 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E808 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E59D in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E216 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:13:06, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:13:10
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E7E6 в функции strcmpBack(). Попытка прочесть данные по адресу 0x000000004C0157E2. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x12B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E7E6 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E57B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E1F4 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:14:44, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:14:47
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E7E6 в функции strcmpBack(). Попытка прочесть данные по адресу 0x000000004C0157E2. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x12B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E7E6 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E57B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E1F4 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:14:44, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:14:47
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E7E6 в функции strcmpBack(). Попытка прочесть данные по адресу 0xFFFFFFFF87FCF47B. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x3760 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E7E6 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E57B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E1F4 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:15:26, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:15:28
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E7E6 в функции strcmpBack(). Попытка прочесть данные по адресу 0xFFFFFFFF87FCF47B. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x3760 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E7E6 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E57B in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E1F4 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:15:26, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:15:28
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E43C в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x7FFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E43C in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:18:28, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:18:31
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E43C в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x7FFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E43C in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:18:28, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:18:31
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E43C в функции printText(). Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x422C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E43C in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:19:03, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:19:06
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E43C в функции printText(). Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x422C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E43C in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:19:03, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:19:06
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E440 в функции printText(). Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x4994 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E440 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:21:40, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:21:43
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E440 в функции printText(). Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x4994 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E440 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:21:40, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:21:43
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E440 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x34AC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E440 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:25:46, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:25:49
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E440 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x34AC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E440 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:25:46, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:25:49
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E446 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x1834 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E446 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:36:42, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:36:44
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E446 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x1834 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E446 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:36:42, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:36:45
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E449 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x540 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E449 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:37:16, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:37:19
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E449 в функции printText(). Попытка прочесть данные по адресу NULL. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x540 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E449 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: printText()
+# 1 0x000000000041E183 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:37:16, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:37:19
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E8CC в функции strcmpBack(). Попытка прочесть данные по адресу 0x00000000262EA731. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x4B38 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E8CC in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E661 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E206 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:47:44, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:47:47
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E8CC в функции strcmpBack(). Попытка прочесть данные по адресу 0x00000000262EA731. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x4B38 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E8CC in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E661 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E206 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:47:44, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:47:47
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E8CC в функции strcmpBack(). Попытка прочесть данные по адресу 0x000000007711E588. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x1DAC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E8CC in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E661 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E206 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:47:44, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:53:59
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E8CC в функции strcmpBack(). Попытка прочесть данные по адресу 0x000000007711E588. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x1DAC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E8CC in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E661 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E206 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:47:44, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:53:59
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E8F8 в функции strcmpBack(). Попытка прочесть данные по адресу 0x0000000066C32761. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x53B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E8F8 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E68D in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E217 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:58:26, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:58:29
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E8F8 в функции strcmpBack(). Попытка прочесть данные по адресу 0x0000000066C32761. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x53B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E8F8 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E68D in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E217 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:58:26, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:58:29
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E8F8 в функции strcmpBack(). Попытка прочесть данные по адресу 0xFFFFFFFFF9911F1A. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x2818 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E8F8 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E68D in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E217 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:58:50, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:58:54
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041E8F8 в функции strcmpBack(). Попытка прочесть данные по адресу 0xFFFFFFFFF9911F1A. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400], Instance: 0x00000000005658E0 (64-bit), Flags: Cmdre0, Thread: 0x2818 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041E8F8 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: strcmpBack()
+# 1 0x000000000041E68D in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: textSort()
+# 2 0x000000000041E217 in C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe: main()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 169, Date: 2021-01-23 10:12:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\TXLib.h
+Compiled:	Mar  3 2021 21:58:50, GNU g++ 9.2.0, std=201402L, MinGW-W64 Runtime 7.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Mar 03 2021 21:58:54
+
+Run file:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program\StrProject.exe
+Directory:	C:\Users\Алехандро\Desktop\AlexProjects\StrProject\Rhyme-Program
+
+--------------------------------------------------
