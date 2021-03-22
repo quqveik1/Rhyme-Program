@@ -24,12 +24,16 @@ const int LineSize = 100;
 const int NLines = 200;
 
 
-char *readText (FILE *Onegin, char *text, gnirts ptext[]);
+int readText (FILE *Onegin, char *text);
+void writeArrText (char *text, gnirts ptext[], FILE *Onegin);
+
 void printText (const gnirts ptext[], int len);
+void printLine (const char * text);
+
 void deleteEOL (char text [LineSize]);
 void sortStart (const char *ptext[NLines]);
 void strcpy_ (char m1[], char m2[], const int Size);
-int strncmp_ (gnirts str1, gnirts str2);
+int strncmp_ (const gnirts &str1, const gnirts &str2);
 void swapStr (char str1[], char str2[]);
 
 int strcmpBack (const gnirts &str1, const gnirts &str2);
@@ -39,7 +43,8 @@ void findLen (gnirts ptext[NLines]);
 long fileSize (const char *nameOfFile);
 long fileSize (FILE *File);
 void findEOLs (char *text, gnirts ptext[], int len);
-int findnEOLs (const char *text, int len);
+int findEOLsN_ (const char *text, int len);
+void findLen (gnirts ptext[NLines], int textLen);
 
 void bubleCheck (char arr[][LineSize], size_t size);
 void bubleUnittest ();
@@ -82,149 +87,27 @@ int main()
 
 	char *text = new char[fSize + 1] {0};
 
-	int nlines = findnEOLs (text, fSize);
+	int nlines = readText (Onegin, text);
 	gnirts *ptext = new gnirts[nlines + 1] {};
-
+    writeArrText (text, ptext, Onegin);
 	printf ("nlines: %d\n", nlines);
 
-	//ptext[0].str = "asdas";
 
-
-	//printf ("\n%ld\n", __cplusplus);
-
-	readText (Onegin, text, ptext);
 	fclose (Onegin);
-    //cout << text << endl;
-
-
-
-	//findLen (ptext);
-	//strncmp_ (text[0], text[2], -1);
 
 
 	printText (ptext, nlines + 1);
 	printf ("printTextIsEnded\n");
-	//printf ("%d||isPunct: %d; isalpha: %d isnum^ %d\n", unsigned char ('«'), ispunct (unsigned char ('М')) || !isalnum(unsigned char ('М')), isalpha ('Ь'), !isalnum(unsigned char ('«')));
+
 
 	char t1[] = "когда не в шутку занемог,";
 	char t2[] = "он уважать себя заставил";
 
-	//printf ("strncmp_: %d\n", strncmp_ (t1, t2, LineSize));
 
-	textSort (ptext, &strcmpBack);
+	textSort (ptext, &strncmp_);
 	printText (ptext, nlines + 1);
-
-
-   //bubleUnittest ();
-
-
 }
 
-void findLen (gnirts ptext[NLines])
-{
-	for (int i = 0; i < NLines; i++)
-	{
-		ptext[i].len = strlen (ptext[i].str);
-	}
-}
-
-
-char *readText (FILE *Onegin, char *text, gnirts ptext[])
-{
-	//int c = 0;
-	long fSize = fileSize (Onegin);
-
-	int nofchar = fread (text, sizeof (char), fSize, Onegin);
-	if (nofchar >= 0)
-	{
-		text[nofchar] = '\0';
-	}
-	findEOLs (text, ptext, nofchar + 1);
-
-	//ptext[1].str = (char *) text[c];
-	//c += strlen ((char *)text[c]);
-	 /*
-	for (int i = 0; i < NLines; i++)
-	{
-
-	}
-	findLen (ptext);
-		*/
-
-	return (char *) text;
-}
-
-long fileSize (const char *nameOfFile)
-{
-	struct stat buff = {};
-	buff.st_size = -1;
-
-	stat (nameOfFile, &buff);
-
-	return buff.st_size;
-
-}
-
-long fileSize (FILE *File)
-{
-	struct stat buff = {};
-	buff.st_size = -1;
-
-	fstat (_fileno (File), &buff);
-
-	return buff.st_size;
-
-}
-
-void bubleUnittest ()
-{
-	char arr[][LineSize] = {"4", "3", "5", "1", "2"};
-	bubleCheck (arr, 5);
-	//printText (arr);
-}
-
-void printText (const gnirts ptext[], int len)
-{
-	for (int i = 0; i < len; i++)
-	{
-		if (ptext[i].str[0] != 0)
-		{
-		    if (ptext[i].str)
-			printf ("%d:", i);
-			printf (" [%p]::", ptext[i].str);
-			VerifyPtr (ptext[i].str);
-			printf ("||%s||\n", ptext[i].str);
-		}
-	}
-	printf ("end\n");
-}
-
-void sortStart (const char *ptext[NLines])
-{
-	//equating (sortText[0], text[0], NLines);
-	for (int j = 0; j < NLines; j ++)
-	{
-		for (int i = 0; i < NLines - j - 1; i++)
-		{
-			int delta = 3;//strncmp_ (ptext[i + 1], ptext[i]);
-
-			if (delta < 0)
-			{
-
-				const char *temp = ptext[i];
-				ptext[i] = ptext[i + 1];
-				ptext[i + 1] = temp;
-
-				//swapStr ((char *)ptext[i], (char *)ptext[i + 1]);
-			}
-			//sortText [i] = sortText[i + 1];
-			//sortText [i] = copy;
-
-			//printText (text);
-			//printf ("\n");
-		}
-	}
-}
 
 void textSort (gnirts ptext[NLines], int (*cmp)(const gnirts &str1, const gnirts &str2))
 {
@@ -240,47 +123,78 @@ void textSort (gnirts ptext[NLines], int (*cmp)(const gnirts &str1, const gnirts
 				auto temp = ptext[i].str;
 				ptext[i].str = ptext[i + 1].str;
 				ptext[i + 1].str = temp;
-
-				//swapStr ((char *)ptext[i], (char *)ptext[i + 1]);
 			}
-			//sortText [i] = sortText[i + 1];
-			//sortText [i] = copy;
-
-			//printText (text);
-			//printf ("\n");
 		}
 	}
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void rhymeSort (char *ptext[NLines])
+int strncmp_ (const gnirts &str1, const gnirts &str2)
 {
-	int l1 = 0;
-	int l2 = 0;
+	VerifyPtr (&str1);
+	VerifyPtr (&str2);
+	VerifyPtr (str1.str);
+	VerifyPtr (str2.str);
 
-	for (int j = 0; j < NLines - 1; j ++)
+	int n1 = 0;
+	int n2 = 0;
+
+	for (int n = 0; n < NLines; n++)
 	{
-		for (int i = 0; i < NLines - j - 1; i++)
-		{
-			l1 = strlen (ptext[i]);
-			l2 = strlen (ptext[i + 1]);
-			int delta = 3; //strcmpBack (ptext[i], ptext[i + 1]);
+		while (!isalnum ( char (str1.str[n1])) && str1.str[n1] != '\n')
+        {
 
-			if (delta < 0)
+
+			if (n1 < str1.len)
 			{
+				n1++;
+			}
 
-				char *temp = ptext[i];
-				ptext[i] = ptext[i + 1];
-				ptext[i + 1] = temp;
+        }
+		while (!isalnum ( char (str2.str[n2])) && str2.str[n2] != '\n')
+		{
+			if (n2 < str2.len)
+				n2++;
+		}
 
-				//swapStr ((char *)ptext[i], (char *)ptext[i + 1]);
+
+
+		if (str1.str[n1] == '\n' && str2.str[n2] == '\n')
+
+
+		{
+			return 0;
+		}
+		if (str1.str[n1] == '\n')
+		{
+			return -1;
+		}
+		if (str2.str[n2] == '\n')
+		{
+			return 1;
+		}
+
+		if (str1.str[n1] != '\n')
+		{
+
+			if (str1.str[n1] != str2.str[n2])
+			{
+				return str1.str[n1] - str2.str[n2];
 			}
 		}
+
+			n1++;
+
+			n2++;
 	}
 
+
+
+
+
 }
-
-
 
 int strcmpBack (const gnirts &str1, const gnirts &str2)
 {
@@ -305,27 +219,8 @@ int strcmpBack (const gnirts &str1, const gnirts &str2)
 			n2++;
 		}
 
-		/*
-		if (str1[l1 - n1] == '\0' && str2[l2 - n2] == '\0')
-		{
-			return 0;
-		}
-		if (str1[n1] == '\0')
-		{
-			return -1;
-		}
-		if (str2[n2] == '\0')
-		{
-			return 1;
-		}
-		*/
-		//if (n1 > l1)   return -1;
-		//if (n2 > l2)   return 1;
-
 		if (str1.str[str1.len - n1] != str2.str[str2.len - n2])
 		{
-			//printf ("str1[%d]: , str2[%d]: ", n1, n2);
-			//printf ("%d", l1 - i);
 			return str1.str[str1.len - n1] - str2.str[str2.len - n2];
 		}
 		n1++;
@@ -336,171 +231,31 @@ int strcmpBack (const gnirts &str1, const gnirts &str2)
 
 }
 
-void bubleCheck (char arr[][LineSize], size_t size)
+
+void writeArrText (char *text, gnirts ptext[], FILE *Onegin)
 {
-	for (int j = 0; j < NLines - 1; j ++)
-	{
-		bool sorted = true;
-		for (int i = 0; i < NLines - j - 1; i++)
-		{
-			//if (strncmp_ (arr[i], arr[i + 1]))
-			{
-				swapStr (arr[i], arr[i+1]);
-			}
-		}
-		if (sorted == true) break;
-	}
-}
-
-int strncmp_ (gnirts str1, gnirts str2)
-{
-	VerifyPtr (str1.str);
-	VerifyPtr (str2.str);
-
-	//int l1 = strlen (str1);
-	//int l2 = strlen (str2);
-
-	int n1 = 0;
-	int n2 = 0;
-
-	for (int n = 0; n < NLines; n++)
-	{
-		while (!isalnum ( char (str1.str[n1])) && str1.str[n1] != '\0')
-        {
-
-
-			if (n1 < str1.len)
-			{
-				n1++;
-			}
-
-		}
-	}
-		while (!isalnum ( char (str2.str[n2])) && str2.str[n2] != '\0')
-		{
-			if (n2 < str2.len)
-				n2++;
-		}
-
-
-
-		if (str1.str[n1] == '\0' && str2.str[n2] == '\0')
-		{
-			return 0;
-		}
-		if (str1.str[n1] == '\0')
-		{
-			return -1;
-		}
-		if (str2.str[n2] == '\0')
-		{
-			return 1;
-		}
-
-		if (str1.str[n1] != '\0')
-		{
-
-			if (str1.str[n1] != str2.str[n2])
-			{
-				//printf ("str1[%d]: , str2[%d]: ", n1, n2);
-				//printf ("%d", n);
-				return str1.str[n1] - str2.str[n2];
-			}
-		}
-
-			n1++;
-
-			n2++;
-
-		/*
-		if (str1[n] == '\0')
-		{
-			return -1;
-		}
-		if (str2[n] == '\0')
-		{
-			return 1;
-		}
-		 */
-		/*
-		if (str1[n] == str2[n])
-		{
-			return 0;
-		}
-		if (str1[n] > str2[n])
-		{
-			return 1;
-		}
-		if (str1[n] < str2[n])
-		{
-			return -1;
-		}
-		abcd\0 yrtfg
-		abcd\0 fghfghf
-		*/
-
-
+    findEOLs (text, ptext, fileSize (Onegin));
+    findLen (ptext, fileSize (Onegin));
 
 }
 
-void swapStr (char str1[], char str2[])
-{
-	VerifyPtr (str1);
-	VerifyPtr (str2);
 
-	for (int n = 0; ; n++)
+int readText (FILE *Onegin, char *text)
+{
+	long fSize = fileSize (Onegin);
+
+	int nofchar = fread (text, sizeof (char), fSize, Onegin);
+	if (nofchar >= 0)
 	{
-		if (str1[n] == '\0' && str2[n] == '\0') break;
-		char copy = str1[n];
-		str1[n] = str2[n];
-		str2[n] = copy;
+		text[nofchar] = '\0';
 	}
 
-}
-
-void strcpy_ (char m1[], char m2[], const int Size)
-{
-	//m1 = m2;
-
-	for (int i = 0; i < Size; i++)
-	{
-		m1[i] = m2[i];
-	}
+	return findEOLsN_ (text, fileSize (Onegin) + 1);
 }
 
 
-/*
-void compare2LinesFromStart (const char *line1, const char *line2)
-{
-	for (int n = 0; n < LineSize; n++)
-	{
-		if (line1[n] > line2[n])
-		{
-			char copy[LineSize];
-			copy = line1;
-			sortText [i] = sortText[i + 1];
-			sortText [i] = copy;
-		}
-	}
 
-}
-*/
-
-void deleteEOL (char text [LineSize])
-{
-	int len = strlen (text);
-	if (len - 1 >= 0)
-	{
-
-		//const char *nul = "\0";
-		if (text[len-1] == '\n')
-		{
-			text[len - 1] = '\0';
-		}
-	}
-}
-
-int findnEOLs (const char *text, int len)
+int findEOLsN_ (const char *text, int len)
 {
 	int nStr = 0;
 	for (int i = 0; i < len; i++)
@@ -532,13 +287,190 @@ void findEOLs (char *text, gnirts ptext[], int len)
         }
 		if (text[i] == '\n')
 		{
-		    //text[i] = '\0';
 			ptext[nlines].str = & (text [i + 1]);
 			nlines++;
 
 		}
 
 	}
+}
+
+
+
+
+void printText (const gnirts ptext[], int len)
+{
+	for (int i = 0; i < len; i++)
+	{
+		if (ptext[i].str[0] != 0)
+		{
+		    if (ptext[i].str)
+			printf ("%d:", i);
+			printf (" [%p]::", ptext[i].str);
+			VerifyPtr (ptext[i].str);
+			printf ("|| ");
+			printLine (ptext[i].str);
+			printf (" ||\n");
+		}
+	}
+	printf ("end\n");
+}
+
+void printLine (const char * text)
+{
+
+    for (int i = 0; ;i ++)
+    {
+        if (text[i] == '\n') break;
+        if (text[i] == '\0') break;
+
+        printf ("%c", text[i]);
+
+    }
+
+}
+
+
+
+void findLen (gnirts ptext[NLines], int textLen)
+{
+	for (int i = 0; i < findEOLs (text, ptext, textLen); i++)
+	{
+		ptext[i].len = ptext[i + 1].str - ptext[i].str;
+	}
+}
+
+
+
+
+long fileSize (const char *nameOfFile)
+{
+	struct stat buff = {};
+	buff.st_size = -1;
+
+	stat (nameOfFile, &buff);
+
+	return buff.st_size;
+
+}
+
+long fileSize (FILE *File)
+{
+	struct stat buff = {};
+	buff.st_size = -1;
+
+	fstat (_fileno (File), &buff);
+
+	return buff.st_size;
+
+}
+
+void sortStart (const char *ptext[NLines])
+{
+	for (int j = 0; j < NLines; j ++)
+	{
+		for (int i = 0; i < NLines - j - 1; i++)
+		{
+			int delta = 3;
+
+			if (delta < 0)
+			{
+
+				const char *temp = ptext[i];
+				ptext[i] = ptext[i + 1];
+				ptext[i + 1] = temp;
+			}
+		}
+	}
+}
+
+
+
+
+void rhymeSort (char *ptext[NLines])
+{
+	int l1 = 0;
+	int l2 = 0;
+
+	for (int j = 0; j < NLines - 1; j ++)
+	{
+		for (int i = 0; i < NLines - j - 1; i++)
+		{
+			l1 = strlen (ptext[i]);
+			l2 = strlen (ptext[i + 1]);
+			int delta = 3;
+			if (delta < 0)
+			{
+
+				char *temp = ptext[i];
+				ptext[i] = ptext[i + 1];
+				ptext[i + 1] = temp;
+			}
+		}
+	}
+
+}
+
+void bubleCheck (char arr[][LineSize], size_t size)
+{
+	for (int j = 0; j < NLines - 1; j ++)
+	{
+		bool sorted = true;
+		for (int i = 0; i < NLines - j - 1; i++)
+		{
+			{
+				swapStr (arr[i], arr[i+1]);
+			}
+		}
+		if (sorted == true) break;
+	}
+}
+
+
+
+void swapStr (char str1[], char str2[])
+{
+	VerifyPtr (str1);
+	VerifyPtr (str2);
+
+	for (int n = 0; ; n++)
+	{
+		if (str1[n] == '\0' && str2[n] == '\0') break;
+		char copy = str1[n];
+		str1[n] = str2[n];
+		str2[n] = copy;
+	}
+
+}
+
+void strcpy_ (char m1[], char m2[], const int Size)
+{
+
+	for (int i = 0; i < Size; i++)
+	{
+		m1[i] = m2[i];
+	}
+}
+
+
+void deleteEOL (char text [LineSize])
+{
+	int len = strlen (text);
+	if (len - 1 >= 0)
+	{
+		if (text[len-1] == '\n')
+		{
+			text[len - 1] = '\0';
+		}
+	}
+}
+
+
+
+void bubleUnittest ()
+{
+	char arr[][LineSize] = {"4", "3", "5", "1", "2"};
+	bubleCheck (arr, 5);
 }
 
 
